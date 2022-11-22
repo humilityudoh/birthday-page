@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    
+}
+.cards{
+    width: 280px;
+    height: 340px;
+    position: absolute;
+    left: 730px;
+    top: 100px;
+    perspective: 900px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+.cards:hover{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}/*
+.block{
+    position: fixed;
+    top: 200px;
+    right: 600px;
+    perspective: 900px;
+}*/
+.block{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    margin: 70px 90px;
+}
+.frames img{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.img2{
+    width: 100px;
+
+}
+.outside, .inside{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.outside{
+    background-color: blanchedalmond;
+    box-shadow: 0 9px 10px rgba(27, 24, 24, 0.5);
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+.outside h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: salmon;
+    margin-bottom: 30px;
+}
+.inside{
+    background-color: rgb(255, 244, 79);
+    box-shadow: 0 9px 10px rgba(27, 24, 24, 0.5);
+
+}
+.inside h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;   
+}
+.frames{
+    width: 400px;
+    height: 150px;
+    box-shadow: 0 9px 10px rgba(27, 24, 24, 0.5);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    
+    padding: 0 10px;
+   
+}
+.frames:nth-child(1)
+{
+    
+    background-color: coral;
+}
+.frames p{
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+.frames:nth-child(2){
+    background-color: goldenrod;
+
+}
+.frames:nth-child(3)
+{
+    top: 100px;
+    background-color: burlywood;
+}
+/* media queries*/
+@media  screen and (max-width: 700px) {
+    .block{
+        display: flex;
+        margin-top: 500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 250px;
+        
+        
+    }
+    .cards{
+        width: 280px;
+        height: 340px;
+        position: absolute;
+        left: 200px;
+        top: 100px;
+        perspective: 900px;
+        transition: 2s;
+        transform-style: preserve-3d;
+        
+    }
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
