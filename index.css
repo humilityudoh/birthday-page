@@ -127,7 +127,7 @@ body{
         width: 180px;
         height: 340px;
         position: absolute;
-        left: 300px;
+        left: 200px;
         top: 100px;
         perspective: 900px;
         
@@ -159,10 +159,10 @@ body{
         width: 200px;
         height: 340px;
         position: absolute;
-        left: 200px;
+        left: 100px;
         top: 100px;
         perspective: 900px;
-        margin-right: 20px;
+        
         transition: 2s;
         transform-style: preserve-3d;
         
